@@ -9,7 +9,7 @@ function includeHTML() {
         fetch(file).then(file => {
             file.text().then(content => {
                 element.insertAdjacentHTML('afterend', content);
-                element.remove
+                element.remove();
             });
         });
         return;
